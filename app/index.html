@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Open Source Universal Remote</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -15,17 +15,59 @@
         <script src="components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
     </head>
-    <body>
+    <body class="fade">
         <div class="container">
             <div class="hero-unit">
-                <h1>'Allo, 'Allo!</h1>
-                <p>You now have</p>
-                <ul>
-                    <li>HTML5 Boilerplate</li>
-                    <li>Twitter Bootstrap</li>
-                </ul>
-                <p>installed.</p>
-                <h3>Enjoy coding! - Yeoman</h3>
+                <h1><img class="remote-icon" src="/images/remote.png" height="103px" width="47px" /> Open Source Universal Remote</h1>
+                <p class="fade lead">Build your own web controlled remote control.</p>
+            </div>
+
+            <div class="row getting-started-container fade">
+                <div class="span5 offset1 getting-started">
+                    <div class="inner">
+                        <h3 class="tk-museo-slab">Build your own:</h3>
+                        <ol>
+                            <li><a href="http://alexba.in/blog/2013/01/04/raspberrypi-quickstart/">Purchase the hardware</a></li>
+                            <li><a href="http://alexba.in/blog/2013/01/06/setting-up-lirc-on-the-raspberrypi/">Configure the software</a></li>
+                            <li><a href="http://alexba.in/blog/2013/02/23/controlling-lirc-from-the-web/">Setup the web interface</a></li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="span5 getting-started">
+                    <div class="inner">
+                        <h3 class="tk-museo-slab">Make it better:</h3>
+                        <ol>
+                            <li>
+                                Improve the hardware
+                                <ul>
+                                    <li><a href="mailto:alex@alexba.in">Please help!</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                Improve the software
+                                <ul>
+                                    <li><a href="http://lirc.org">LIRC</a> - Linux Infrared Remote Control</li>
+                                    <li><a href="http://github.com/alexbain/lirc_node">lirc_node</a> - LIRC + NodeJS</li>
+                                    <li><a href="http://github.com/alexbain/lirc_web">lirc_web</a> - Web App</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Build a 3D printed case
+                                <ul>
+                                    <li><a href="mailto:alex@alexba.in">Please help!</a></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row footer fade">
+                <div class="span12">
+                    <p class="center"><a href="http://thenounproject.com/noun/remote-control/#icon-No10870" target="_blank">Remote Control</a> designed by <a href="http://thenounproject.com/esteves_emerick" target="_blank">Adriano Emerick</a> from The Noun Project</p>
+                    <p class="center">Questions? Comments? Email <a href="mailto:alex@alexba.in">Alex Bain</a>.</p>
+                </div>
             </div>
         </div>
 
@@ -33,13 +75,16 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            var _gaq=[['_setAccount','UA-38971335-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+
+        <!-- TypeKit -->
+        <script type="text/javascript" src="//use.typekit.net/uls3gbv.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
         <!-- build:js scripts/main.js -->
         <script src="components/jquery/jquery.js"></script>

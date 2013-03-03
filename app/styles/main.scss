@@ -1,6 +1,94 @@
 @import 'sass-bootstrap/lib/bootstrap';
 
+a {
+  color: #bc5b6b;
+
+  &:hover {
+    color: #8a424e;
+  }
+
+  &:active {
+    color: #f07388;
+  }
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background: url(/images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  background: transparent;
+}
+
+.footer {
+  color: #fff;
+  font-size: 11px;
+  margin-top: 60px;
+  text-align: center;
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+.getting-started {
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, .6);
+  margin-top: 40px;
+
+  @include border-radius(2px);
+
+  li {
+    margin: 5px 0;
+  }
+}
+
+.inner {
+  padding: 10px 20px;
+}
+
 .hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
+  background: transparent;
+  color: #fff;
+  margin: 15% auto 0 auto;
+  padding: 0;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+
+  h1 {
+    font-weight: normal;
+    font-size: 58px;
+    letter-spacing: 0px;
+  }
+
+  .lead {
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+}
+
+.noun-project-attribution {
+  background: rgba(255, 255, 255, .75);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 4px;
+  @include border-top-right-radius(3px);
+}
+
+.remote-icon {
+  position: relative;
+  top: -20px;
+}
+
+.center {
+  text-align: center;
 }
