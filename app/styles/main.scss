@@ -30,7 +30,7 @@ body {
 .footer {
   color: #fff;
   font-size: 11px;
-  margin-top: 60px;
+  margin-top: 20px;
   text-align: center;
 
   a {
@@ -45,10 +45,6 @@ body {
   margin-top: 40px;
 
   @include border-radius(2px);
-
-  h3 {
-    margin-bottom: 25px;
-  }
 
   li {
     margin: 5px 0;
@@ -74,19 +70,24 @@ body {
   }
 
   .lead {
-    letter-spacing: 1px;
+    font-weight: 100;
+    letter-spacing: 2px;
     margin-top: 20px;
   }
 }
 
 .noun-project-attribution {
-  background: rgba(255, 255, 255, .75);
+  color: rgba(30, 30, 30, .75);
   position: absolute;
   bottom: 0;
-  left: 0;
+  font-size: 9px;
+  right: 70px;
   margin: 0;
   padding: 4px;
-  @include border-top-right-radius(3px);
+
+  a {
+    color: rgba(30, 30, 30, .75);
+  }
 }
 
 .remote-icon {
@@ -97,3 +98,32 @@ body {
 .center {
   text-align: center;
 }
+
+
+@media (max-width: 480px) {
+  .remote-icon {
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .noun-project-attribution {
+    position: relative;
+    bottom: auto;
+    right: auto;
+  }
+
+  // Moving badge so it does not obscure content
+  .typekit-badge {
+    position: relative !important;
+    bottom: auto !important;
+    right: auto !important;
+    border-radius: 2px;
+    left: 50% !important;
+    margin-left: -31px !important;
+    margin-top: 12px !important;
+  }
+}
+
