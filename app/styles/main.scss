@@ -63,7 +63,7 @@ body {
 
 .inner {
   margin: 0 auto;
-  padding: 10px 10px;
+  padding: 60px 10px;
   width: 170px;
 }
 
@@ -118,6 +118,10 @@ body {
     margin: 0 auto;
   }
 
+  .inner {
+    padding: 0px 10px;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -140,7 +144,16 @@ body {
 
   .inner {
     width: auto;
+    padding: 5px 10px;
   }
 
 
+}
+
+
+@media (max-width: 980px) {
+  .inner {
+    width: auto;
+    padding: 10px 20px;
+  }
 }
