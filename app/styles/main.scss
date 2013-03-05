@@ -16,17 +16,6 @@ a {
 html {
   height: 100%;
   width: 100%;
-  background: url(/images/background.jpg) no-repeat center center fixed;
-
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 body {
@@ -34,19 +23,21 @@ body {
 }
 
 .footer {
-  color: #333;
+  background: #2f3b4a;
+  color: #fff;
   font-size: 11px;
-  margin-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
 
   a {
-    color: #333;
+    color: #cde1ee;
     text-decoration: underline;
   }
 }
 
 .getting-started {
-  background: rgba(255, 255, 255, .6);
+  //background: rgba(255, 255, 255, .6);
   margin-bottom: 40px;
   margin-top: 40px;
 
@@ -64,13 +55,127 @@ body {
 .inner {
   margin: 0 auto;
   padding: 60px 10px;
-  width: 170px;
 }
+
+.colored-bar {
+  background: #2f3b4a;
+  height: 8px;
+  margin: 0;
+}
+
+.quick-overview-container {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.overview {
+  position: relative;
+
+  h2,
+  p {
+    text-align: center;
+  }
+}
+
+.arrow {
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  top: 105px;
+  left: -45px;
+  background: url(/images/icons/right-arrow.png) center center no-repeat;
+}
+
+.getting-started-container {
+  background: #cde1ee;
+}
+
+.overview-icons {
+  margin: 40px auto;
+  border: 2px solid transparent;
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  position: relative;
+}
+
+.overview-icons-remote {
+  border-color: #cde1ee;
+}
+
+.overview-icon-1,
+.overview-icon-2,
+.overview-icon-3,
+.overview-icon-4,
+.overview-icon-5,
+.overview-icon-6 {
+  opacity: .3;
+}
+
+.overview-icon-0 {
+  position: relative;
+  top: 21%;
+  left: 38%;
+}
+
+.overview-icon-1 {
+  position: relative;
+  top: 75px;
+  left: 20px;
+}
+
+.overview-icon-2 {
+  position: relative;
+  top: 110px;
+  right: 35px;
+}
+
+.overview-icon-3 {
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.overview-icon-4 {
+  position: relative;
+  top: 95px;
+  left: 105px;
+}
+
+.overview-icon-6 {
+  position: relative;
+  top: 20px;
+  left: 0px;
+}
+
+.overview-icon-5 {
+  position: relative;
+  top: 90px;
+  right: 110px;
+}
+
+
+
+
+.hero-unit-container {
+  background: url(/images/background.jpg) no-repeat center center fixed;
+
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 
 .hero-unit {
   background: transparent;
   color: #fff;
-  margin: 15% auto 0 auto;
+  margin: 10% auto 10% auto;
   padding: 0;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
@@ -89,16 +194,12 @@ body {
 }
 
 .noun-project-attribution {
-  color: rgba(30, 30, 30, .75);
-  position: absolute;
-  bottom: 0;
   font-size: 9px;
-  right: 70px;
   margin: 0;
   padding: 4px;
 
   a {
-    color: rgba(30, 30, 30, .75);
+    color: #cde1ee;
   }
 }
 
@@ -124,36 +225,45 @@ body {
 
 }
 
-@media (max-width: 767px) {
-  .noun-project-attribution {
-    position: relative;
-    bottom: auto;
-    right: auto;
+@media (max-width: 760px) {
+  .arrow {
+    background-image: url(/images/icons/down-arrow.png);
+    top: -100px;
+    left: 50%;
+    margin-left: -32px;
+  }
+  
+  .has-arrow {
+    margin-top: 150px;
   }
 
-  // Moving badge so it does not obscure content
-  .typekit-badge {
-    position: relative !important;
-    bottom: auto !important;
-    right: auto !important;
-    border-radius: 2px;
-    left: 50% !important;
-    margin-left: -31px !important;
-    margin-top: 12px !important;
+  .overview-icons {
+    margin: 20px auto;
   }
+}
 
-  .inner {
-    width: auto;
-    padding: 5px 10px;
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .arrow {
+    background-image: url(/images/icons/right-arrow-small.png);
+    height: 32px;
+    width: 32px;
+    top: 125px;
+    left: -25px;
   }
-
 
 }
 
-
-@media (max-width: 980px) {
-  .inner {
-    width: auto;
-    padding: 10px 20px;
-  }
+// Moving badge so it does not obscure content
+/*
+.typekit-badge {
+  position: relative !important;
+  bottom: auto !important;
+  right: auto !important;
+  border-radius: 2px;
+  left: 50% !important;
+  margin-left: -31px !important;
+  margin-top: 12px !important;
 }
+*/
+

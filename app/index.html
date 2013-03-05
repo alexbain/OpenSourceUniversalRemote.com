@@ -16,42 +16,84 @@
         <!-- endbuild -->
     </head>
     <body class="fade">
+        <div class="colored-bar"></div>
+        <div class="hero-unit-container">
+            <div class="container">
+              <div class="hero-unit">
+                  <h1><img class="remote-icon" src="/images/remote.png" height="103px" width="47px" /> Open Source Universal Remote</h1>
+                  <p class="fade lead">Build your own web connected remote control.</p>
+              </div>
+            </div>
+        </div>
         <div class="container">
-            <div class="hero-unit">
-                <h1><img class="remote-icon" src="/images/remote.png" height="103px" width="47px" /> Open Source Universal Remote</h1>
-                <p class="fade lead">Make your own Internet of Things remote control.</p>
-            </div>
-
-            <div class="row getting-started-container fade">
-
-                <div class="span4 offset2 getting-started">
-                    <div class="inner">
-                        <h3 class="tk-museo-slab">Make</h3>
-                        <ol>
-                            <li><a href="http://alexba.in/blog/2013/01/04/raspberrypi-quickstart/">Purchase RaspberryPi</a></li>
-                            <li><a href="http://alexba.in/blog/2013/01/06/setting-up-lirc-on-the-raspberrypi/">Configure software</a></li>
-                            <li><a href="http://alexba.in/blog/2013/02/23/controlling-lirc-from-the-web/">Setup web interface</a></li>
-                        </ol>
+            <div class="row quick-overview-container fade">
+                <div class="span4 overview">
+                    <div class="overview-icons">
+                        <img src="/images/icons/desktop.png" class="overview-icon-1" height="64px" width=64px" />
+                        <img src="/images/icons/phone.png" class="overview-icon-3" height="64px" width=64px" />
+                        <img src="/images/icons/cloud.png" class="overview-icon-2" height="64px" width=64px" />
                     </div>
+                    <h2 class="lead">Web Devices</h2>
+                    <p class="small muted">Use any web enabled device or service.</p>
                 </div>
 
-                <div class="span4 getting-started">
-                    <div class="inner">
-                        <h3 class="tk-museo-slab">Hack</h3>
-                        <ol>
-                            <li><a href="mailto:alex@alexba.in?subject=[OSUR]+Improve+hardware">Improve hardware</a></li>
-                            <li><a href="mailto:alex@alexba.in?subject=[OSUR]+Improve+software">Improve software</a></li>
-                            <li><a href="mailto:alex@alexba.in?subject=[OSUR]+Design+enclosure">Design enclosure</a></li>
-                        </ol>
+                <div class="span4 overview has-arrow">
+                    <div class="overview-icons overview-icons-remote">
+                        <img src="/images/remote-black.png" class="overview-icon-0" height="98px" width=47px" />
+                    </div>
+                    <h2 class="lead">Open Source Universal Remote</h2>
+                    <p class="muted">Provides a web UI and API to control infrared devices.</p>
+                    <div class="arrow"></div>
+                </div>
+
+                <div class="span4 overview has-arrow">
+                    <div class="overview-icons">
+                        <img src="/images/icons/game.png" class="overview-icon-4" height="64px" width=64px" />
+                        <img src="/images/icons/tv.png" class="overview-icon-6" height="64px" width=64px" />
+                        <img src="/images/icons/receiver.png" class="overview-icon-5" height="64px" width=64px" />
+                    </div>
+                    <h2 class="lead">Infrared Devices</h2>
+                    <p class="muted smaller">Control IR devices from the web.</p>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="getting-started-container fade">
+            <div class="container">
+                <div class="row">
+                    <div class="span4 offset2 getting-started">
+                        <div class="inner">
+                            <h3 class="tk-museo-slab">Build your own:</h3>
+                            <ol>
+                                <li><a href="http://alexba.in/blog/2012/07/08/universal-remote-experiments/">Read the backstory</a></li>
+                                <li><a href="http://alexba.in/blog/2013/01/04/raspberrypi-quickstart/">Purchase a RaspberryPi</a></li>
+                                <li><a href="http://alexba.in/blog/2013/01/06/setting-up-lirc-on-the-raspberrypi/">Configure the hardware & software</a></li>
+                                <li><a href="http://alexba.in/blog/2013/02/23/controlling-lirc-from-the-web/">Setup the web interface + API</a></li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="span4 getting-started">
+                        <div class="inner">
+                            <h3 class="tk-museo-slab">Improve it for everyone:</h3>
+                            <ol>
+                                <li><a href="mailto:alex@alexba.in?subject=[OSUR]+Improve+hardware">Help design a PCB</a></li>
+                                <li><a href="mailto:alex@alexba.in?subject=[OSUR]+Improve+software">Help design the web interface and API</a></li>
+                                <li><a href="mailto:alex@alexba.in?subject=[OSUR]+Design+enclosure">Help design a 3D printable enclosure</a></li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row footer fade">
-                <div class="span12">
-                    <p class="center powered-by">Powered by <a href="http://raspberrypi.org">RaspberryPi</a>, <a href="http://lirc.org">LIRC</a>, <a href="http://nodejs.org">NodeJS</a>, <a href="http://github.com/alexbain/lirc_node">lirc_node</a>, and <a href="http://github.com/alexbain/lirc_web">lirc_web</a>.</p>
-                    <p class="center">Questions? Email <a href="mailto:alex@alexba.in">Alex Bain</a>.</p>
-                    <p class="center noun-project-attribution"><a href="http://thenounproject.com/noun/remote-control/#icon-No10870" target="_blank">Remote Control</a> designed by <a href="http://thenounproject.com/esteves_emerick" target="_blank">Adriano Emerick</a> from The Noun Project</p>
+        </div>
+        <div class="footer fade">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <p class="center powered-by">Powered by <a href="http://raspberrypi.org">RaspberryPi</a>, <a href="http://lirc.org">LIRC</a>, <a href="http://nodejs.org">NodeJS</a>, <a href="http://github.com/alexbain/lirc_node">lirc_node</a>, and <a href="http://github.com/alexbain/lirc_web">lirc_web</a>.</p>
+                        <p class="center">Project by <a href="mailto:alex@alexba.in">Alex Bain</a>.</p>
+                        <p class="center noun-project-attribution"><a href="http://thenounproject.com/noun/remote-control/#icon-No10870" target="_blank">Remote Control</a> designed by <a href="http://thenounproject.com/esteves_emerick" target="_blank">Adriano Emerick</a> from The Noun Project</p>
+                    </div>
                 </div>
             </div>
         </div>
